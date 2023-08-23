@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  height: 100vh;
+  
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 18%;
+  background-color: #ff0000;
+  position: absolute;
+  height: 104.5%;
+  
+}
+
+ul li{
+  margin: 5%;
+  padding: 5% 10%;
+  background-color: aquamarine;
+  position: sticky;
+}
+
+ul li:hover {
+  background-color: rgb(140, 0, 255);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+ul li a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+font-size: 16px;
+padding-left: 10%;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+  position: relative;
+  top: 5px;
+  right: 15px;
+}
+
+
+@media (max-width: 900px){
+a{
+  width: 100px;
+}
+
+}
+
+.more {
+  background-color: burlywood;
+
+}
+
+.container {
+  flex: 1; /* İçeriği doldurmak için gereken alanı kullanır */
+  display: flex;
+  justify-content: flex-end; /* Ekranın sağ tarafında hizalama */
+  height: 100%;
+  background-color: burlywood;
+}
+
+.content {
+  width: 14%; /* Örneğin, içeriğin yüzde 70'si genişliğinde */
+  height: 50%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin-top: 50px;
+  margin-right: 280px;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* İçeriği dikey hizala */
+  }
+
+  .container {
+    
+    justify-content: flex-start; /* Üstte hizala */
+  }
+
+  .content {
+    
+    margin-right: 0; /* Sağdan boşluk kaldır */
+    margin-bottom: 20px; /* Alttan boşluk ekle */
+  }
+}
